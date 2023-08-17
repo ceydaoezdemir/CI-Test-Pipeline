@@ -10,9 +10,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.8</java.version>
-        <junit.jupiter.version>5.8.1</junit.jupiter.version> <!-- Aktualisierte Version -->
-        <junit.platform.version>1.8.1</junit.platform.version> <!-- Aktualisierte Version -->
+        <java.version>1.8</java.version> <!-- Hinzugefügt -->
+        <junit.jupiter.version>5.8.1</junit.jupiter.version>
+        <junit.platform.version>1.8.1</junit.platform.version>
     </properties>
 
     <build>
@@ -27,7 +27,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version> <!-- Aktualisierte Version -->
+                <version>2.22.2</version>
                 <dependencies>
                     <dependency>
                         <groupId>org.junit.platform</groupId>
