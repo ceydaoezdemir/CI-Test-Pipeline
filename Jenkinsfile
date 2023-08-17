@@ -2,9 +2,7 @@ pipeline {
     agent any
     
     environment {
-        JAVA_HOME = '/Library/Java/JavaVirtualMachines/jdk1.8.0_381.jdk/Contents/Home'
-        MAVEN_HOME = '/Users/ceydaozdemir/Downloads/apache-maven-3.9.4'
-        PATH = "$MAVEN_HOME/bin:${PATH}"
+        JAVA_HOME = '/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home'
     }
 
     stages {
