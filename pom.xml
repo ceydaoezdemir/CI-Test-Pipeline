@@ -16,7 +16,7 @@
     <junit.jupiter.version>5.8.0</junit.jupiter.version>
     <junit.platform.version>1.8.0</junit.platform.version>
     <!-- Ändere die Version von junit-platform-surefire-provider -->
-    <junit.platform.surefire.provider.version>1.0.3</junit.platform.surefire.provider.version>
+    <junit.platform.surefire.provider.version>1.7.0</junit.platform.surefire.provider.version>
 </properties>
 
     </properties>
