@@ -8,7 +8,9 @@ pipeline {
     stages {
         stage ('Compile Stage') {
             steps {
-                withMaven(maven : 'maven_3_9_4') {
+                script {
+                    def mvnHome = tool name: 'maven_3_9_4', type: 'hudson.tasks.Maven$MavenInstallation'
+                    env.PATH = "${mvnHome}/bin:${env.PATH}"
                     sh 'mvn clean compile'
                 }
             }
@@ -16,7 +18,9 @@ pipeline {
         
         stage ('Testing Stage') {
             steps {
-                withMaven(maven : 'maven_3_9_4') {
+                script {
+                    def mvnHome = tool name: 'maven_3_9_4', type: 'hudson.tasks.Maven$MavenInstallation'
+                    env.PATH = "${mvnHome}/bin:${env.PATH}"
                     sh 'mvn test'
                 }
             }
@@ -24,7 +28,9 @@ pipeline {
 
         stage ('Deployment Stage') {
             steps {
-                withMaven(maven : 'maven_3_9_4') {
+                script {
+                    def mvnHome = tool name: 'maven_3_9_4', type: 'hudson.tasks.Maven$MavenInstallation'
+                    env.PATH = "${mvnHome}/bin:${env.PATH}"
                     sh 'mvn deploy'
                 }
             }
