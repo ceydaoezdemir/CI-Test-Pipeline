@@ -39,7 +39,7 @@
         </plugins>
     </build>
 
- <dependencies>
+    <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
@@ -51,23 +51,13 @@
             <artifactId>junit-platform-runner</artifactId>
             <version>${junit.platform.version}</version>
         </dependency>
-
     </dependencies>
 
- <!-- Kein eigenes Repository, stattdessen zentrales Maven Central Repository -->
-    <!-- <repositories>
+    <repositories>
         <repository>
             <id>myMavenRepo.read</id>
             <url>https://mymavenrepo.com/repo/FN8PIshHk5uALNhkXbhs/</url>
         </repository>
-    </repositories> -->
-
-    <!-- Keine DistributionManagement-Konfiguration für eigenes Repository -->
-    <!-- <distributionManagement>
-        <repository>
-            <id>myMavenRepo.write</id>
-            <url>https://mymavenrepo.com/repo/9Q8JoRpymi4UGK8HzbVq/</url>
-        </repository>
-    </distributionManagement> -->
+    </repositories>
 
 </project>
