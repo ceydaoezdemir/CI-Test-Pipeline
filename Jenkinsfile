@@ -3,6 +3,9 @@ pipeline {
     
     environment {
         JAVA_HOME = '/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home'
+        MAVEN_HOME = '/Users/ceydaozdemir/Downloads/apache-maven-3.9.4'
+        PATH = "${env.PATH}:${MAVEN_HOME}/bin"
+
     }
 
     stages {
