@@ -60,4 +60,10 @@
         </repository>
     </repositories>
 
+    <distributionManagement>
+        <repository>
+            <id>temporary-repo</id>
+            <url>file://${project.build.directory}/mvn-repo</url>
+        </repository>
+    </distributionManagement>
 </project>
